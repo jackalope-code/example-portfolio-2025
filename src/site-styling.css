@@ -1,0 +1,14 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Carattere', cursive;
+  font-weight: 400;
+}
+
+p, li, a, button {
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
