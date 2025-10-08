@@ -1,15 +1,19 @@
 {
   "name": "example-site-2025",
+  "homepage": "https://github.com/jackalope-code/example-portfolio-2025.git",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "styled-components": "^6.1.19"
