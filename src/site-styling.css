@@ -33,15 +33,39 @@ body {
   overflow: hidden;
 }
 
-/* .section-container section:nth-child(2n) {
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+/* Upper diagonal slants: these cut the top edge so the element appears to slope upward */
+.upper-diagonal-slant-right {
+  /* slants up to the right: top-right point pulled down */
+  -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  /* tweak the first coordinate (0% 10%) to change steepness */
   overflow: hidden;
 }
 
-.section-container section:nth-child(2n+1) {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+.upper-diagonal-slant-left {
+  /* slants up to the left: top-left point pulled down */
+  -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+  /* tweak the second coordinate (100% 10%) to change steepness */
   overflow: hidden;
+}
+
+/* .section-container section:nth-child(2n) {
+  /* slants up to the right: top-right point pulled down */
+  -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  /* tweak the first coordinate (0% 10%) to change steepness */
+  overflow: hidden;
+  padding: 10px;
+}
+
+.section-container section:nth-child(2n+1) {
+  /* slants up to the left: top-left point pulled down */
+  -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+  /* tweak the second coordinate (100% 10%) to change steepness */
+  overflow: hidden;
+  padding: 10px;
 } */
 
 .verticalLine {

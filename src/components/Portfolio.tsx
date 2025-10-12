@@ -167,10 +167,37 @@ const usePortfolio = (initialItems: PortfolioItemState[] = []) => {
     return [items, setItems] as const;
 }
 
+interface ExpandedSectionDetailsProps {
+    item: PortfolioItemState;
+    expanded: boolean;
+}
+
+const ExpandedSectionDetails = ({item, expanded}: ExpandedSectionDetailsProps) => {
+    return (
+        <>
+            { expanded && (
+                item.mediaItems && item.mediaItems.length > 0 && (
+                    <>
+                    <p>{item.description}</p>
+                    {item.mediaItems.map((media, index) => {
+                    if (media.type === 'image') {
+                        return <img key={index} src={media.url} alt={`Media ${index + 1}`} style={{maxWidth: '100%', height: 'auto', margin: '10px 0'}} />
+                    }})}
+                </>
+            )
+            )}
+        </>
+    )
+}
+
 const Portfolio = ({}: PortfolioProps) => {
     //const [portfolioItems, setPortfolioItems] = usePortfolio([]);
     const [portfolioItems] = usePortfolio(mockData);
+    const [expanded, setExpanded] = useState<boolean>(false);
 
+    // TODO: Add divider line down center with items alternating sides
+    // TODO: Expand/Collapse long descriptions
+    // TODO: Expand/collapse portfolio items to show more details and media
     return (
         <FlexLayout className="section-container"$layoutDirection="column">
             <div className="verticalLine" style={{position: "absolute"}}></div>
@@ -179,12 +206,8 @@ const Portfolio = ({}: PortfolioProps) => {
                 <section className="diagonal" style={{padding: '20px', margin: '10px 0', background: '#f0f0f0'}} key={item.id}>
                     <div key={item.id}>
                         <h2>{item.title}</h2>
-                        <p>{item.description}</p>
-                        {item.mediaItems && item.mediaItems.length > 0 && item.mediaItems.map((media, index) => {
-                            if (media.type === 'image') {
-                                return <img key={index} src={media.url} alt={`Media ${index + 1}`} style={{maxWidth: '100%', height: 'auto', margin: '10px 0'}} />
-                            }}
-                        )}
+                        <button onClick={() => setExpanded(!expanded)} style={{marginBottom: '10px'}}>{expanded ? 'Show Less' : 'Show More'}</button>
+                        <ExpandedSectionDetails item={item} expanded={expanded}></ExpandedSectionDetails>
                     </div>
                  </section>
                 ))
