@@ -12,3 +12,38 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+
+.diagonal-slant-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%); /* Example for a bottom diagonal */
+  /* Adjust polygon coordinates to define your desired diagonal shape */
+  /* Other styles like background, padding, etc. */
+  overflow: hidden;
+}
+
+.diagonal-slant-left {
+  /* Mirror of .diagonal-slant-right: pulls the bottom-left point up so the diagonal slants to the left */
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  /*
+    Notes:
+    - Change the last coordinate (0% 90%) to e.g. 0% 85% for a steeper left slant or 0% 95% for a gentler slant.
+    - Add background, padding, and overflow:hidden as needed on elements using this class.
+    - Keep a non-clipped fallback if you need perfect cross-browser support.
+  */
+  overflow: hidden;
+}
+
+/* .section-container section:nth-child(2n) {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+  overflow: hidden;
+}
+
+.section-container section:nth-child(2n+1) {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  overflow: hidden;
+} */
+
+.verticalLine {
+  border-left: thick solid #ff0000;
+}
