@@ -12,11 +12,10 @@ import MediaPage from './pages/MediaPage'
 
 const navItems = [
   { label: "Home", to: "/" },
-  { label: "Portfolio", to: "/portfolio" },
   { label: "About", to: "/about" },
   { label: "Headshots & Resume", to: "/headshots-and-resume" },
-  { label: "Blog", to: "/blog" },
-  { label: "News", to: "/news" },
+  { label: "Media", to: "/media" },
+  { label: "Projects", to: "/portfolio" },
   { label: "Contact", to: "/contact" }
 ];
 function App() {
