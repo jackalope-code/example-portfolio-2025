@@ -81,3 +81,13 @@ section {
 body {
   background-color: #7c7c7c;
 }
+
+nav a {
+ text-decoration: none;
+ color: white;
+ padding: 10px;
+}
+
+nav a::visited {
+  color: white;
+}
