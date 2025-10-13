@@ -6,14 +6,14 @@ const PrimaryHeader = styled.h1`
     text-align: center;
 `;
 
-const HomePage = () => {
+const PortfolioPage = () => {
     return (
         <>
-            <PrimaryHeader>Portfolio</PrimaryHeader>
+            <PrimaryHeader>Project Page</PrimaryHeader>
             <Portfolio></Portfolio>
         </>
 
     )
 }
 
-export default HomePage;
+export default PortfolioPage;
