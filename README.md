@@ -5,6 +5,9 @@
 - ~~Test building~~
 - Add pages and layout
 - Improve footer
+    - Apply full width across the page
+    - Prevent over scrolling. Footer should always stick to the bottom of the content, but not be sticky.
+    - Add contact info with styling that could be worked from a CRM
 - Improve nav bar
 - Improve home page
     - Add hero section to start
