@@ -1,6 +1,11 @@
+import MediaGallery from "../components/MediaGallery";
 
 const MediaPage = () => {
-    return <h1>Media Page</h1>
+    return (
+        <MediaGallery>
+
+        </MediaGallery>
+    )
 }
 
 export default MediaPage;
