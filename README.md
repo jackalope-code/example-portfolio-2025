@@ -9,6 +9,7 @@
     - Prevent over scrolling. Footer should always stick to the bottom of the content, but not be sticky.
     - Add contact info with styling that could be worked from a CRM
 - Improve nav bar
+    - Optimize for mobile (switch to hamburger menu with media queries)
 - Improve home page
     - Add hero section to start
     - Add other sections
@@ -21,3 +22,7 @@
 - ~~Add static routing~~
 - ~~Create a static build pipeline~~
 - Add a button to click back up to the beginning of the page for long form content
+- Use variables to set/track navbar and footer heights
+- Mobile Notes
+    - Footer is broken on mobile
+    - Nav bar needs to turn into a hamburger menu on mobile
