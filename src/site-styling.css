@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Carattere', cursive;
+  /* font-family: 'Carattere', cursive; */
+  font-family: 'Gravitas One', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 400;
 }
 
@@ -51,23 +52,32 @@ body {
 }
 
 /* .section-container section:nth-child(2n) {
-  /* slants up to the right: top-right point pulled down */
+  // slants up to the right: top-right point pulled down
   -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
-  /* tweak the first coordinate (0% 10%) to change steepness */
+  // tweak the first coordinate (0% 10%) to change steepness
   overflow: hidden;
   padding: 10px;
-}
+} */
 
+/*
 .section-container section:nth-child(2n+1) {
-  /* slants up to the left: top-left point pulled down */
+  // slants up to the left: top-left point pulled down
   -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
-  /* tweak the second coordinate (100% 10%) to change steepness */
+  // tweak the second coordinate (100% 10%) to change steepness
   overflow: hidden;
   padding: 10px;
 } */
 
 .verticalLine {
   border-left: thick solid #ff0000;
+}
+
+section {
+  background-color: #ffffff
+}
+
+body {
+  background-color: #7c7c7c;
 }
