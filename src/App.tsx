@@ -7,6 +7,7 @@ import NavBar from './components/NavBar'
 import HeadshotsAndResumePage from './pages/HeadshotsAndResumePage'
 import ContactPage from './pages/ContactPage'
 import MediaPage from './pages/MediaPage'
+import Footer from './components/Footer'
 
 const navItems = [
   { label: "Home", to: "/" },
@@ -30,6 +31,7 @@ function App() {
           <Route path="/projects" element={<PortfolioPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
+        <Footer />
       </HashRouter>
     </>
   )
