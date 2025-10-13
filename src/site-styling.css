@@ -80,6 +80,8 @@ section {
 
 body {
   background-color: #7c7c7c;
+  max-width: 800px;
+  margin-top: 100px;
 }
 
 nav a {
@@ -88,6 +90,6 @@ nav a {
  padding: 10px;
 }
 
-nav a::visited {
+nav a:visited {
   color: white;
 }

@@ -1,5 +1,4 @@
 import { HashRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
 //import AboutPage from './pages/AboutPage'
 import PortfolioPage from './pages/PortfolioPage'
 import HomePage from './pages/HomePage'
@@ -9,6 +8,7 @@ import HeadshotsAndResumePage from './pages/HeadshotsAndResumePage'
 import BlogPage from './pages/BlogPage'
 import NewsPage from './pages/NewsPage'
 import ContactPage from './pages/ContactPage'
+import MediaPage from './pages/MediaPage'
 
 const navItems = [
   { label: "Home", to: "/" },
@@ -27,11 +27,10 @@ function App() {
         <NavBar items={navItems} />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/headshots-and-resume" element={<HeadshotsAndResumePage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/news" element={<NewsPage />} />
+          <Route path="/media" element={<MediaPage />} />
+          <Route path="/projects" element={<PortfolioPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </HashRouter>

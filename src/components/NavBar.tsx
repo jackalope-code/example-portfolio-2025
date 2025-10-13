@@ -16,8 +16,13 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     background-color: #000000;
     padding: 1rem;
-    height: 180px;
+    height: 100px;
     width: 100% !important;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 `;
 
 const NavBar = ({items}: NavBarProps) => {
