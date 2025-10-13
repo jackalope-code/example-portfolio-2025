@@ -28,6 +28,9 @@ const StyledNav = styled.nav`
 
     font-family: 'Gravitas One', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2rem;
+    a:hover {
+        border-bottom: 2px solid #ffffff;
+    }
 `;
 
 // text-decoration: ${(props) => props.visited ? 'underline' : 'none'};
