@@ -13,7 +13,7 @@ Ut aliquet eget purus eget consequat. Nunc facilisis nunc nunc, vitae ullamcorpe
         <p>
 Etiam a eros urna. Integer sit amet sem sapien. Etiam metus enim, hendrerit nec eleifend at, cursus ac nibh. Pellentesque mattis aliquet leo et blandit. Mauris lacinia urna vel nulla convallis, sit amet ullamcorper nisl porttitor. Phasellus non consectetur neque. Pellentesque sit amet auctor elit. Morbi eleifend aliquam sem, sed finibus magna.
         </p>
-        <Link to ="/portfolio">Go to Portfolio Page</Link>
+        <Link to ="/media">Go to my media page</Link>
         </>
 
     )
