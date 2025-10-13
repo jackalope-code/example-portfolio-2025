@@ -191,16 +191,6 @@ const SectionDetails = ({item}: SectionDetailsProps) => {
 const Portfolio = ({}: PortfolioProps) => {
     //const [portfolioItems, setPortfolioItems] = usePortfolio([]);
     const [portfolioItems] = usePortfolio(mockData);
-    const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
-
-    const toggleExpanded = (id: string) => {
-        setExpandedIds(prev => {
-            const next = new Set(prev);
-            if (next.has(id)) next.delete(id);
-            else next.add(id);
-            return next;
-        });
-    };
 
     // TODO: Add divider line down center with items alternating sides
     // TODO: Expand/Collapse long descriptions
@@ -213,7 +203,7 @@ const Portfolio = ({}: PortfolioProps) => {
                 <section className="diagonal" style={{padding: '20px', margin: '10px 0', background: '#f0f0f0'}} key={item.id}>
                     <div key={item.id}>
                         <h2>{item.title}</h2>
-                        <SectionDetails item={item} expanded={false}></SectionDetails>
+                        <SectionDetails item={item}></SectionDetails>
                     </div>
                  </section>
                 ))
