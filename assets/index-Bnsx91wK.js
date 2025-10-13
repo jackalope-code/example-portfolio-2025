@@ -94,6 +94,9 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
 
     font-family: 'Gravitas One', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2rem;
+    a:hover {
+        border-bottom: 2px solid #ffffff;
+    }
 `,x1=rn($i)`
     border-bottom: 2px solid ${i=>i.visited?"#ffffff":"transparent"};
 `,N1=({items:i})=>{const[c,o]=U.useState(null),r=d=>{o(d)};return $.jsx(D1,{children:i.map((d,h)=>$.jsx(x1,{visited:c===h,to:d.to,onClick:()=>r(h),children:d.label},h))})},U1=()=>$.jsx("h1",{children:"Headshots and Resume Page"}),H1=()=>$.jsx("h1",{children:"Contact Page"}),q1=()=>$.jsx("h1",{children:"Media Page"}),B1=[{label:"Home",to:"/"},{label:"About",to:"/about"},{label:"Headshots & Resume",to:"/headshots-and-resume"},{label:"Media",to:"/media"},{label:"Projects",to:"/projects"},{label:"Contact",to:"/contact"}];function j1(){return $.jsx($.Fragment,{children:$.jsxs(fg,{children:[$.jsx(N1,{items:B1}),$.jsxs(Lp,{children:[$.jsx(ra,{path:"/",element:$.jsx(M1,{})}),$.jsx(ra,{path:"/about",element:$.jsx(C1,{})}),$.jsx(ra,{path:"/headshots-and-resume",element:$.jsx(U1,{})}),$.jsx(ra,{path:"/media",element:$.jsx(q1,{})}),$.jsx(ra,{path:"/projects",element:$.jsx(O1,{})}),$.jsx(ra,{path:"/contact",element:$.jsx(H1,{})})]})]})})}$v.createRoot(document.getElementById("root")).render($.jsx(U.StrictMode,{children:$.jsx(j1,{})}));
