@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -13,7 +14,8 @@ interface NavBarProps {
 
 const StyledNav = styled.nav`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
     background-color: #000000;
     padding: 1rem;
     height: 100px;
@@ -25,12 +27,26 @@ const StyledNav = styled.nav`
     right: 0;
 `;
 
+// text-decoration: ${(props) => props.visited ? 'underline' : 'none'};
+const VisitTrackingLink = styled(Link)<{visited: boolean}>`
+    border-bottom: 2px solid ${(props) => props.visited ? '#ffffff' : 'transparent'};
+`;
+
 const NavBar = ({items}: NavBarProps) => {
+    const [indexLastClick, setIndexLastClick] = useState<number | null>(null);
+    const handleOnClick = (index: number) => {
+        setIndexLastClick(index);
+    }
     return (
         <StyledNav>
             {items.map((item, index) => {
                 return (
-                    <Link key={index} to={item.to}>{item.label}</Link>
+                    <VisitTrackingLink
+                        visited={indexLastClick === index}
+                        key={index}
+                        to={item.to}
+                        onClick={() => handleOnClick(index)}>{item.label}
+                    </VisitTrackingLink>
                 )
             })}
         </StyledNav>
