@@ -12,6 +12,17 @@ p, li, a, button {
 body {
     /*max-width: 800px;*/
     margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #7c7c7c;
+    max-width: 800px;
+    margin-top: 100px;
+}
+
+main {
+  flex-grow: 1;
+  min-height: calc(98vh - 200px );
 }
 
 .diagonal-slant-right {
@@ -76,12 +87,6 @@ body {
 
 section {
   background-color: #ffffff
-}
-
-body {
-  background-color: #7c7c7c;
-  max-width: 800px;
-  margin-top: 100px;
 }
 
 nav a {

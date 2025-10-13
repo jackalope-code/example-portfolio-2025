@@ -4,7 +4,6 @@ import HeroSection from "../components/HeroSection";
 const HomePage = () => {
     return (
         <>
-            <main>
                 <HeroSection>
                 <h2>Welcome to the home page!</h2>
                 <h3></h3>
@@ -22,7 +21,6 @@ const HomePage = () => {
                 <Link to ="/media">Go to my media page</Link>
 
                 </section>
-            </main>
         </>
 
     )

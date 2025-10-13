@@ -1,15 +1,19 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components";
 
+
+    // position: static;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+
+
 const StyledFooter = styled.footer`
     background-color: #000000;
     color: #ffffff;
+    width: 100% !important;
     text-align: center;
     padding: 1rem;
-    position: static;
-    bottom: 0;
-    left: 0;
-    right: 0;
     font-family: 'Gravitas One', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
     a {

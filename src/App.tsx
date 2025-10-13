@@ -23,14 +23,16 @@ function App() {
     <>
       <HashRouter>
         <NavBar items={navItems} />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/headshots-and-resume" element={<HeadshotsAndResumePage />} />
-          <Route path="/media" element={<MediaPage />} />
-          <Route path="/projects" element={<PortfolioPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/headshots-and-resume" element={<HeadshotsAndResumePage />} />
+            <Route path="/media" element={<MediaPage />} />
+            <Route path="/projects" element={<PortfolioPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
         <Footer />
       </HashRouter>
     </>
