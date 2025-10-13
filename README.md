@@ -14,7 +14,10 @@
     - Add other sections
 - Work on Media page
 - Rework portfolio page into projects page
+    - Current and past projects
 - Work on contact page
 - Work on Headshots and Resume page
+    - Link to projects page
 - ~~Add static routing~~
 - ~~Create a static build pipeline~~
+- Add a button to click back up to the beginning of the page for long form content
