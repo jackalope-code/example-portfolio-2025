@@ -4,5 +4,14 @@
 - Use context state management pattern for portfolio item state
 - ~~Test building~~
 - Add pages and layout
+- Improve footer
+- Improve nav bar
+- Improve home page
+    - Add hero section to start
+    - Add other sections
+- Work on Media page
+- Rework portfolio page into projects page
+- Work on contact page
+- Work on Headshots and Resume page
 - ~~Add static routing~~
 - ~~Create a static build pipeline~~
