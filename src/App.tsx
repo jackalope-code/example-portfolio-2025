@@ -5,8 +5,6 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import NavBar from './components/NavBar'
 import HeadshotsAndResumePage from './pages/HeadshotsAndResumePage'
-import BlogPage from './pages/BlogPage'
-import NewsPage from './pages/NewsPage'
 import ContactPage from './pages/ContactPage'
 import MediaPage from './pages/MediaPage'
 
