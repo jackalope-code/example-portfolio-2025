@@ -167,15 +167,14 @@ const usePortfolio = (initialItems: PortfolioItemState[] = []) => {
     return [items, setItems] as const;
 }
 
-interface ExpandedSectionDetailsProps {
+interface SectionDetailsProps {
     item: PortfolioItemState;
-    expanded: boolean;
 }
 
-const ExpandedSectionDetails = ({item, expanded}: ExpandedSectionDetailsProps) => {
+const SectionDetails = ({item}: SectionDetailsProps) => {
     return (
         <>
-            { expanded && (
+            {
                 item.mediaItems && item.mediaItems.length > 0 && (
                     <>
                     <p>{item.description}</p>
@@ -184,7 +183,6 @@ const ExpandedSectionDetails = ({item, expanded}: ExpandedSectionDetailsProps) =
                         return <img key={index} src={media.url} alt={`Media ${index + 1}`} style={{maxWidth: '100%', height: 'auto', margin: '10px 0'}} />
                     }})}
                 </>
-            )
             )}
         </>
     )
@@ -193,7 +191,16 @@ const ExpandedSectionDetails = ({item, expanded}: ExpandedSectionDetailsProps) =
 const Portfolio = ({}: PortfolioProps) => {
     //const [portfolioItems, setPortfolioItems] = usePortfolio([]);
     const [portfolioItems] = usePortfolio(mockData);
-    const [expanded, setExpanded] = useState<boolean>(false);
+    const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
+
+    const toggleExpanded = (id: string) => {
+        setExpandedIds(prev => {
+            const next = new Set(prev);
+            if (next.has(id)) next.delete(id);
+            else next.add(id);
+            return next;
+        });
+    };
 
     // TODO: Add divider line down center with items alternating sides
     // TODO: Expand/Collapse long descriptions
@@ -206,8 +213,7 @@ const Portfolio = ({}: PortfolioProps) => {
                 <section className="diagonal" style={{padding: '20px', margin: '10px 0', background: '#f0f0f0'}} key={item.id}>
                     <div key={item.id}>
                         <h2>{item.title}</h2>
-                        <button onClick={() => setExpanded(!expanded)} style={{marginBottom: '10px'}}>{expanded ? 'Show Less' : 'Show More'}</button>
-                        <ExpandedSectionDetails item={item} expanded={expanded}></ExpandedSectionDetails>
+                        <SectionDetails item={item} expanded={false}></SectionDetails>
                     </div>
                  </section>
                 ))
