@@ -3,28 +3,42 @@ import styled from "styled-components";
 const OuterGrid = styled.div`
     display: grid;
     grid: auto-flow / 1fr 1fr;
+    grid-gap: 30px;
+    padding: 30px;
 `;
 
 const InnerGrid = styled.div`
     display: grid;
     grid: auto-flow / 1fr 1fr;
+    grid-layout: space-evenly;
+    grid-gap: 30px;
 `;
 
 const Resume = styled.img`
 
 `;
 
+const PageStyle = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #8ace00;
+`;
+
 const HeadshotsAndResumePage = () => {
     return (
-        <OuterGrid>
-            <InnerGrid>
-                <div>Headshot placeholder</div>
-                <div>Headshot placeholder</div>
-                <div>Headshot placeholder</div>
-                <div>Headshot placeholder</div>
-            </InnerGrid>
-            <Resume />
-        </OuterGrid>
+        <PageStyle>
+            <OuterGrid>
+                <InnerGrid>
+                    <img src="https://picsum.photos/seed/headshot-1/800/1000" alt="headshot" />
+                    <img src="https://picsum.photos/seed/headshot-2/800/1000" alt="headshot" />
+                    <img src="https://picsum.photos/seed/headshot-3/800/1000" alt="headshot" />
+                    <img src="https://picsum.photos/seed/headshot-4/800/1000" alt="headshot" />
+                </InnerGrid>
+                <Resume src="https://picsum.photos/seed/resume/1080/1920" alt="resume" />
+            </OuterGrid>
+        </PageStyle>
     )
 }
 

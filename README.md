@@ -26,3 +26,6 @@
 - Mobile Notes
     - Footer is broken on mobile
     - Nav bar needs to turn into a hamburger menu on mobile
+- Headshot and Resume Page
+    - Add download buttons for headshots and resume
+        - Implement in DownloadableImage
