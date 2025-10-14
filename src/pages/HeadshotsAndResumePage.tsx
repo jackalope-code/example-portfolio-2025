@@ -1,7 +1,30 @@
+import styled from "styled-components";
+
+const OuterGrid = styled.div`
+    display: grid;
+    grid: auto-flow / 1fr 1fr;
+`;
+
+const InnerGrid = styled.div`
+    display: grid;
+    grid: auto-flow / 1fr 1fr;
+`;
+
+const Resume = styled.img`
+
+`;
 
 const HeadshotsAndResumePage = () => {
     return (
-            <h1>Headshots and Resume Page</h1>
+        <OuterGrid>
+            <InnerGrid>
+                <div>Headshot placeholder</div>
+                <div>Headshot placeholder</div>
+                <div>Headshot placeholder</div>
+                <div>Headshot placeholder</div>
+            </InnerGrid>
+            <Resume />
+        </OuterGrid>
     )
 }
 
