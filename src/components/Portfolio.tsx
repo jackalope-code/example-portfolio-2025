@@ -196,7 +196,7 @@ const Portfolio = ({}: PortfolioProps) => {
     // TODO: Expand/Collapse long descriptions
     // TODO: Expand/collapse portfolio items to show more details and media
     return (
-        <FlexLayout className="section-container"$layoutDirection="column">
+        <GridLayout className="section-container">
             <div className="verticalLine" style={{position: "absolute"}}></div>
             {portfolioItems.length > 0 ? (
                 portfolioItems.map((item: PortfolioItemState) => (
@@ -209,7 +209,7 @@ const Portfolio = ({}: PortfolioProps) => {
                 ))
             ) : (<div>Loading</div>)
             }
-        </FlexLayout>
+        </GridLayout>
         );
 }
 

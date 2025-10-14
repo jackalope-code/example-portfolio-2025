@@ -29,3 +29,5 @@
 - Headshot and Resume Page
     - Add download buttons for headshots and resume
         - Implement in DownloadableImage
+- Contact Page
+    - Improve contact form styling
