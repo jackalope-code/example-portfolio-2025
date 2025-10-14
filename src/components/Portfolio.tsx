@@ -142,6 +142,13 @@ const FlexLayout = styled.div<PortfolioProps>`
     flex-direction: ${(props) => props.$layoutDirection || 'row'};
 `
 
+const GridLayout = styled.div<PortfolioProps>`
+    display: grid;
+    grid: auto-flow dense / 1fr 1fr;
+    grid-gap: 30px;
+    padding: 30px;
+`;
+
 /*
 // TODO: USE WITH CONTEXT
 // TODO: PERSISTENCE LAYER (LOCAL STORAGE / BACKEND)
