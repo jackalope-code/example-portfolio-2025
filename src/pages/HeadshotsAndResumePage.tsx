@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import DownloadableImage from "../components/DownloadableImage";
 
 const OuterGrid = styled.div`
     display: grid;
@@ -31,12 +32,12 @@ const HeadshotsAndResumePage = () => {
         <PageStyle>
             <OuterGrid>
                 <InnerGrid>
-                    <img src="https://picsum.photos/seed/headshot-1/800/1000" alt="headshot" />
-                    <img src="https://picsum.photos/seed/headshot-2/800/1000" alt="headshot" />
-                    <img src="https://picsum.photos/seed/headshot-3/800/1000" alt="headshot" />
-                    <img src="https://picsum.photos/seed/headshot-4/800/1000" alt="headshot" />
+                    <DownloadableImage src="https://picsum.photos/seed/headshot-1/800/1000" alt="headshot" name={""} />
+                    <DownloadableImage src="https://picsum.photos/seed/headshot-2/800/1000" alt="headshot" name={""} />
+                    <DownloadableImage src="https://picsum.photos/seed/headshot-3/800/1000" alt="headshot" name={""} />
+                    <DownloadableImage src="https://picsum.photos/seed/headshot-4/800/1000" alt="headshot" name={""} />
                 </InnerGrid>
-                <Resume src="https://picsum.photos/seed/resume/1080/1920" alt="resume" />
+                <DownloadableImage src="https://picsum.photos/seed/resume/1080/1920" alt="resume" name={""} />
             </OuterGrid>
         </PageStyle>
     )
