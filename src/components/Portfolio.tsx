@@ -137,10 +137,10 @@ const mockData: PortfolioItemState[] = [
                     },
                 ];
 
-const FlexLayout = styled.div<PortfolioProps>`
-    display: flex;
-    flex-direction: ${(props) => props.$layoutDirection || 'row'};
-`
+// const FlexLayout = styled.div<PortfolioProps>`
+//     display: flex;
+//     flex-direction: ${(props) => props.$layoutDirection || 'row'};
+// `;
 
 const GridLayout = styled.div<PortfolioProps>`
     display: grid;
