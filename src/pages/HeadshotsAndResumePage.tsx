@@ -15,10 +15,6 @@ const InnerGrid = styled.div`
     grid-gap: 30px;
 `;
 
-const Resume = styled.img`
-
-`;
-
 const PageStyle = styled.div`
     display: flex;
     flex-direction: column;

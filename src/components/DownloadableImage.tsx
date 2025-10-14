@@ -1,5 +1,5 @@
 
-import ExampleDoc from '......src/assets/files/exampleDoc.pdf'
+//import ExampleDoc from '......src/assets/files/exampleDoc.pdf'
 import styled from 'styled-components';
 
 interface DownloadableImageProps {
