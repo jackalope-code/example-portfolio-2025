@@ -28,6 +28,11 @@ const StyledFooter = styled.footer`
     }
 `;
 
+// TODO: Dynamically set these properties to StyledFooter when scrolled down far enough
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
 const Footer = () => {
     return (
         <StyledFooter>

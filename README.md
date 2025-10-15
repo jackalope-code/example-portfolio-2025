@@ -25,7 +25,8 @@
 - Add a button to click back up to the beginning of the page for long form content w/o 
 - Use variables to set/track navbar and footer heights
 - Mobile Notes
-    - Footer is broken on mobile
+    - ~~Footer is broken on mobile~~ fixed?
+    - Set footer to a fixed position when scrolling down far enough
     - Nav bar needs to turn into a hamburger menu on mobile
 - Headshot and Resume Page
     - Add download buttons for headshots and resume
