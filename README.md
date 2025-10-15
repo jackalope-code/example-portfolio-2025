@@ -1,11 +1,12 @@
 # To-Do
+- Work on mobile view
 - Create a CRM and hosting pipeline - ensure that good domains are available
 - Use CSS variables for theming and font
 - Use context state management pattern for portfolio item state
 - ~~Test building~~
-- Add pages and layout
+- ~~Add pages~~ and layout
 - Improve footer
-    - Apply full width across the page
+    - ~~Apply full width across the page~~
     - Prevent over scrolling. Footer should always stick to the bottom of the content, but not be sticky.
     - Add contact info with styling that could be worked from a CRM
 - Improve nav bar
@@ -21,7 +22,7 @@
     - Link to projects page
 - ~~Add static routing~~
 - ~~Create a static build pipeline~~
-- Add a button to click back up to the beginning of the page for long form content
+- Add a button to click back up to the beginning of the page for long form content w/o 
 - Use variables to set/track navbar and footer heights
 - Mobile Notes
     - Footer is broken on mobile
